@@ -1,0 +1,11 @@
+.header {
+    width: auto;
+    height: 90px;
+    background-color: aqua;
+}
+
+.brange {
+    width: 90px;
+    height: 90px;
+    padding-left: 2%;
+}
