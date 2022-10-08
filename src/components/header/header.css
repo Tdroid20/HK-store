@@ -1,11 +1,66 @@
 .header {
-    width: auto;
+    width: 100%;
     height: 90px;
     background-color: aqua;
+    display: flex;
+}
+
+.Logo {
+    width: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .brange {
-    width: 90px;
-    height: 90px;
+
     padding-left: 2%;
+    margin-right: 20px;
+}
+
+.HighKingdomLogo {
+   width: 250px;
+   height: 90x;
+}
+
+.NavItems {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.NavLink {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+    ;
+}
+
+.NavTitleLink {
+    color: #166e00; 
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+}
+
+.NavTitleLink:hover {
+    color: #30be0d;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+}
+
+.AuthButton {
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.colorButtonLogin {
+    color: green;
+    font-weight: 600;
 }

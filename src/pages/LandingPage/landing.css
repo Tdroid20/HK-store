@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.LandingTitle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.LandingTextDiv {
+    display: flex;
+    margin-top: 250px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bah {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.LandingText {
+    width: 550px;
+}
+
+.colorTextAqua {
+    color: aqua;
+    margin: 0;
+    margin-left: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.strongText {
+    margin: 0;
+    margin-left: 4px;
+    font-weight: 600;
+}
