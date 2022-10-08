@@ -20,7 +20,7 @@ const HeaderView = () => {
                 <div className='NavItems'>
                     <p className='NavLink'><a href="/home" className='NavTitleLink'>Home</a></p>
                     <p className='NavLink'><a href="/store" className='NavTitleLink'>Store</a></p>
-                    <p className='NavLink'><a href="https://youtube.com" className='NavTitleLink'>Comunity</a></p>
+                    <p className='NavLink'><a href="https://discord.gg/ndF2gERSDn" className='NavTitleLink'>Comunity</a></p>
 
                     <div className='AuthButton'>
                     <a href='/auth'>
