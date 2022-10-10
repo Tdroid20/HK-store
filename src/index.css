@@ -1,3 +1,10 @@
+:root {
+  --boxColor: #454545;
+  --colorTheme: #212121;
+  --colorTextLight: #a8a8a8;
+  --secondBoxColor: #383838;
+}
+
 body {
   margin: 0;
   padding: 0;

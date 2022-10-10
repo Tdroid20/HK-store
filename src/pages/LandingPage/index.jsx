@@ -1,6 +1,9 @@
 import React from "react"; 
 import HeaderView from "../../components/header/header";
 import './landing.css';
+import kaiAvatar from '../../assets/Kai.png';
+import Tdroid from '../../assets/tdroid.gif';
+import zHenrique from '../../assets/zZHenrique-_.png';
 
 const LandingPage = () => {
     var JoinedAt = new Date()
@@ -32,7 +35,7 @@ const LandingPage = () => {
                         </div>
 
                         <div className="MF-MemberBox">
-                            <img src="https://cdn.discordapp.com/attachments/1025989693965340694/1028219701958029342/Wumpus_-_20.png" alt="User Avatar" className="MF-Avatar" />
+                            <img src={Tdroid} alt="User Avatar" className="MF-Avatar" />
 
                             <div className="MF-usernfo">
                                 <p className="MF-Username">! Tdroid2.0</p>
@@ -42,14 +45,14 @@ const LandingPage = () => {
                                 </div>
                             </div>
                             <div className="MF-MemberType">
-                                <img src="https://cdn.discordapp.com/attachments/1025949696851705856/1026158288083112007/HighPremium_Logo.png" alt="Boost" className="MF-MemberTypeIcon"/>
+                                <img src="https://cdn.discordapp.com/attachments/1025949696851705856/1026158288083112007/HighPremium_Logo.png" alt="Premium Type" className="MF-MemberTypeIcon"/>
 
                             </div>
                         </div>
 
                         {/* Copy test */}
                         <div className="MF-MemberBox">
-                            <img src="https://cdn.discordapp.com/attachments/1025989693965340694/1028219701958029342/Wumpus_-_20.png" alt="User Avatar" className="MF-Avatar" />
+                            <img src={kaiAvatar} alt="User Avatar" className="MF-Avatar" />
 
                             <div className="MF-usernfo">
                                 <p className="MF-Username">Kai Inchose</p>
@@ -59,7 +62,7 @@ const LandingPage = () => {
                                 </div>
                             </div>
                             <div className="MF-MemberType">
-                                <img src="https://cdn.discordapp.com/attachments/1017576990217359400/1017577510902452304/BoosterRocket.png" alt="Boost" className="MF-MemberTypeIcon"/>
+                                <img src="https://cdn.discordapp.com/attachments/1017576990217359400/1017577510902452304/BoosterRocket.png" alt="Premium Type" className="MF-MemberTypeIcon"/>
 
                             </div>
                         </div>
@@ -75,13 +78,13 @@ const LandingPage = () => {
                                 </div>
                             </div>
                             <div className="MF-MemberType">
-                                <img src="https://cdn.discordapp.com/icons/886117125444468746/61c06d57d34a4660cb293d1eaa18e496.png" alt="Boost" className="MF-MemberTypeIcon"/>
+                                <img src="https://cdn.discordapp.com/icons/886117125444468746/61c06d57d34a4660cb293d1eaa18e496.png" alt="Premium Type" className="MF-MemberTypeIcon"/>
 
                             </div>
                         </div>
 
                         <div className="MF-MemberBox">
-                            <img src="https://cdn.discordapp.com/attachments/1025989693965340694/1028219701958029342/Wumpus_-_20.png" alt="User Avatar" className="MF-Avatar" />
+                            <img src={zHenrique} alt="User Avatar" className="MF-Avatar" />
 
                             <div className="MF-usernfo">
                                 <p className="MF-Username">zZHenrique-_</p>
@@ -91,7 +94,7 @@ const LandingPage = () => {
                                 </div>
                             </div>
                             <div className="MF-MemberType">
-                                <img src="https://cdn.discordapp.com/icons/886117125444468746/61c06d57d34a4660cb293d1eaa18e496.png" alt="Boost" className="MF-MemberTypeIcon"/>
+                                <img src="https://cdn.discordapp.com/icons/886117125444468746/61c06d57d34a4660cb293d1eaa18e496.png" alt="Premium Type" className="MF-MemberTypeIcon"/>
 
                             </div>
                         </div>

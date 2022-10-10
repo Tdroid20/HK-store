@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+.HeaderStyle {
+    width: 100%;
+    height: 90px;
+    display: flex;
+}
+
 .LandingTitle {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 30px; 
     margin-bottom: 50px;
     font-family: 'Alfa Slab One', cursive;
+    position: relative;
 }
 
 .LandingTextDiv {
