@@ -26,7 +26,9 @@ export const AuthPageView = () => {
                         </form>
 
                         <div className="separator"></div>
-                        <button className="LoginWithDiscord"><i className="fa-brands fa-discord"></i> Login with Discord</button>
+                        <a href="http://localhost:3001/auth/discord">
+                          <button className="LoginWithDiscord"><i className="fa-brands fa-discord"></i> Login with Discord</button>
+                        </a>
                     </div>
                 </div>
             </div>
