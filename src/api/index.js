@@ -1,7 +1,6 @@
-
 import axios from 'axios';
 
-
 export function getUserDetails() {
-    return axios.get(`${process.env.api}/auth`, { withCredentials: true });
+    console.log(process.env.api);
+    return axios.get(`${process.env.REACT_APP_API}/auth`, { withCredentials: true });
 }

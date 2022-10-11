@@ -3,6 +3,7 @@ import HeaderView from "../../components/header/header";
 import './authStyle.css'; 
 
 export const AuthPageView = () => {
+  console.log(process.env.REACT_APP_API);
     return (
         <>
           <div className="HeaderStyle">
@@ -26,7 +27,7 @@ export const AuthPageView = () => {
                         </form>
 
                         <div className="separator"></div>
-                        <a href="http://localhost:3001/auth/discord">
+                        <a href={process.env.REACT_APP_API + '/auth/discord'}>
                           <button className="LoginWithDiscord"><i className="fa-brands fa-discord"></i> Login with Discord</button>
                         </a>
                     </div>

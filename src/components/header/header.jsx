@@ -45,7 +45,7 @@ const HeaderView = () => {
                     )}
                     
                     { user != null && (<>
-                        <a href="http://localhost:3001/auth/logout">
+                        <a href={process.env.REACT_APP_API + '/auth/logout'}>
                             <div className="UserButton">
                                 <img src={user.discordAvatar} alt="User Avatar" className='HP-Avatar'/>
                                 <p className='HP-Username'>{user.discordUsername}</p>
