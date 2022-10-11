@@ -3,5 +3,5 @@ import axios from 'axios';
 
 
 export function getUserDetails() {
-    return axios.get(`http://localhost:3001/auth`, { withCredentials: true });
+    return axios.get(`${process.env.api}/auth`, { withCredentials: true });
 }
