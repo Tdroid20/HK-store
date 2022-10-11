@@ -1,12 +1,15 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import './header.css';
 import React, { useEffect, useState } from "react";
 import brange from '../../assets/BrangeHK.png';
 import logoName from '../../assets/Hk.png';
-import { getUserDetails } from '../../api/index'
+import { getUserDetails } from '../../api/index';
 
 const HeaderView = () => {
     const [ user, setUser ] = React.useState(null);
-    const [loading, setLoading ] = React.useState(true);
+    const [ loading, setLoading ] = React.useState(true);
+    const [ isBeta, setBetaView ] = useState(false);
 
     useEffect( () => {
         getUserDetails().then(({data}) => {
@@ -45,12 +48,19 @@ const HeaderView = () => {
                     )}
                     
                     { user != null && (<>
-                        <a href={process.env.REACT_APP_API + '/auth/logout'}>
-                            <div className="UserButton">
-                                <img src={user.discordAvatar} alt="User Avatar" className='HP-Avatar'/>
-                                <p className='HP-Username'>{user.discordUsername}</p>
-                            </div>
-                        </a>
+                        <div className="btn-group">
+                            <button type="button" className="btn btn-secondary HP-UserColor"><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</button>
+                            <button type="button" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                            <span className="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="#">Action</a></li>
+                            <li><a className="dropdown-item" href="#">Another action</a></li>
+                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr className="dropdown-divider" /></li>
+                            <li><a className="dropdown-item HP-LogoutColor" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                            </ul>
+                        </div>
                         </>)}
                     
                 </div>
