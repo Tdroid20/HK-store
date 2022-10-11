@@ -13,9 +13,9 @@ export const AuthPageView = () => {
             <div className="PageWidth">
                 <div className="AuthBox">
                     <div className="AuthFormDiv">
-                    <p className="FormAuthTitle">
-                     Login
-                    </p>
+                        <p className="FormAuthTitle">
+                        Login
+                        </p>
                         <form>
                             <input type="email" name="authEmail" id="authEmail" className="authTextField" placeholder="Digite seu E-mail" />
                             <input type="password" name="authPassword" id="authPassword" className="authTextField" placeholder="Digite sua senha" />
