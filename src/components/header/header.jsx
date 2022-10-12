@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import brange from '../../assets/BrangeHK.png';
 import logoName from '../../assets/Hk.png';
 import { getUserDetails } from '../../api/index';
+import { DangerBadge, DarkBadge, LightBadge, PrimaryBadge, SecondaryBadge, SuccessBadge, WarningBadge } from '../badges/badges.status'
 
 const HeaderView = () => {
     const [ user, setUser ] = React.useState(null);
@@ -51,14 +52,14 @@ const HeaderView = () => {
                         <div className="btn-group">
                             <button type="button" className="btn btn-secondary HP-UserColor"><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</button>
                             <button type="button" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
-                            <span className="visually-hidden">Toggle Dropdown</span>
+                            <span className="visually-hidden">User Dropdown</span>
                             </button>
                             <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
+                            <li><a className="dropdown-item" href="#">Leaderboard</a></li>
                             <li><a className="dropdown-item" href="#">Another action</a></li>
                             <li><a className="dropdown-item" href="#">Something else here</a></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item HP-LogoutColor" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                            <li><a className="dropdown-item HP-LogoutColor" href="#"><i className="fa-solid fa-right-from-bracket"></i> Logout {<DangerBadge flagName="Dev" />}</a></li>
                             </ul>
                         </div>
                         </>)}
