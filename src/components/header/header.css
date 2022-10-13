@@ -6,9 +6,13 @@
 }
 
 .Logo {
-    width: auto;
+    width: 900px;
     display: flex;
     flex-direction: row;
+}
+
+.LogoContent {
+    width: 420px;
 }
 
 .brange {
@@ -18,7 +22,7 @@
 
 .HighKingdomLogo {
    width: 250px;
-   height: 90x;
+   height: 90px;
 }
 
 .NavItems {

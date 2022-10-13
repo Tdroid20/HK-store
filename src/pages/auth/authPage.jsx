@@ -3,7 +3,6 @@ import HeaderView from "../../components/header/header";
 import './authStyle.css'; 
 
 export const AuthPageView = () => {
-  console.log(process.env.REACT_APP_API);
     return (
         <>
           <div className="HeaderStyle">

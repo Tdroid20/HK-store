@@ -24,12 +24,12 @@ const HeaderView = () => {
         <>
             <div className='header'>
                 <div className="Logo">
-                    <div className='LogoContent'>
-                        <a href="/home">
-                            <img src={brange} alt="Brasão HighKingdom" className='brange' />
-                        </a>
-                    </div>
-                    <img src={logoName} alt="Brasão HighKingdom" className='HighKingdomLogo' />
+                    <a href="/home">
+                        <div className='LogoContent'>
+                                <img src={brange} alt="Brasão HighKingdom" className='brange' />
+                        <img src={logoName} alt="Brasão HighKingdom" className='HighKingdomLogo' />
+                        </div>
+                    </a>
                 </div>
                 
 
