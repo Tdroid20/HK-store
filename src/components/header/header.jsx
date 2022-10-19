@@ -27,7 +27,7 @@ const HeaderView = () => {
                     <a href="/home">
                         <div className='LogoContent'>
                                 <img src={brange} alt="Brasão HighKingdom" className='brange' />
-                        <img src={logoName} alt="Brasão HighKingdom" className='HighKingdomLogo' />
+                                <img src={logoName} alt="Brasão HighKingdom" className='HighKingdomLogo' />
                         </div>
                     </a>
                 </div>
@@ -50,7 +50,7 @@ const HeaderView = () => {
                     
                     { user != null && (<>
                         <div className="btn-group">
-                            <button type="button" className="btn btn-secondary HP-UserColor"><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</button>
+                                <button type="button" className="btn btn-secondary HP-UserColor"><a className='HP-Username' href={'/profile?id=' + user.discordID}><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</a></button>
                             <button type="button" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
                             <span className="visually-hidden">User Dropdown</span>
                             </button>

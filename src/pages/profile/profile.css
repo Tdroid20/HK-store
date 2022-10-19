@@ -1,0 +1,30 @@
+      @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+.patua {
+    font-family: 'Patua One', cursive;
+}
+#avatar {
+    z-index: 1;
+    margin-top: -5%;
+    height: 9vw;
+    border-radius: 50%;
+}
+.banner {
+    height: 300;
+    width: 120;
+}
+@media screen and (max-width: 1300px) {
+    #avatar {
+        height: 12vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    #avatar {
+        height: 20vw;
+    }
+}
+
+.HP-AvatarProfile {
+        width: 125px;
+        height: 125px;
+        border-radius: 100px;
+}

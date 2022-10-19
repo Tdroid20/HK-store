@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage/index';
 import { BrowserRouter, Route, Routes, Navigate, Link } from 'react-router-dom';
 import { AuthPageView } from './pages/auth/authPage';
 import { StoreView } from './pages/shop/StoreView';
+import { ProfileView } from './pages/profile/profilePage';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path="/invite" element={<Link to="/" />}/>
       <Route path='/store' element={<StoreView />} />
       <Route path='/auth' element={<AuthPageView />} />
+      <Route path='/profile' element={<ProfileView />} />
       </Routes>
     </BrowserRouter>
   );

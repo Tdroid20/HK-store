@@ -90,12 +90,10 @@
     text-align: center;
     align-items: center;
     margin-right: 15px;
-}
-.HP-UserColor {
-    color: #35ff00;
+    transition: 0.4s ease-out;
 }
 
-.HP-UserColor:hover {
+.HP-Username:hover {
     color: #35ff00;
 }
 
