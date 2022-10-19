@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import { getUserDetails } from "../../api";
 import './profile.css';
 import { MdVerified } from 'react-icons/md';
-import banner from '../../assets/BannerNull.png'
+import banner from '../../assets/BannerNull.png';
+import spotify from '../../assets/spotifyro.png'
 
 export const ProfileView = () => {
     const [ user, setUser ] = React.useState(null);
@@ -43,6 +44,21 @@ export const ProfileView = () => {
                     <div className="container">
                         <div className="cardContainer">
                             <p className="cardUsername">{user.discordUsername}</p>
+                        </div>
+
+                        <p className="cardTabs">User Info</p>
+                        <div className="cardSeparator"></div>
+                        <div className="cardInformationUser">
+                            <div className="cardAboutMe">
+                                About-me
+                            </div>
+                                <textarea name="aboutMe" id="aboutMe" cols="35" rows="3" placeholder={user.aboutMe} className="aboutMe" maxLength="100"></textarea>
+                        </div>
+                        <div className="cardSeparator topSep"></div>
+
+                        <div className="cardConnection">
+                            <img src={spotify} className="icon" />
+                            <p className="connectionName">{user.discordUsername}</p>
                         </div>
                     </div>
                 </div>
