@@ -14,7 +14,7 @@ const HeaderView = (props) => {
     const [ user, setUser ] = React.useState(null);
     const { profile, showProfile } = props;
 
-    useEffect( () => {
+    useEffect(() => {
         getUserDetails().then(({data}) => {
             setUser(data);
             console.log(data);
@@ -52,7 +52,7 @@ const HeaderView = (props) => {
                     { user != null && (<>
 
                         <div className="btn-group">
-                                <button type="button" className="btn btn-secondary HP-UserColor"><a className='HP-Username' onClick={() => showProfile(true)}><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</a></button>
+                                <button type="button" className="btn btn-secondary HP-UserColor" onClick={() => showProfile(true)}><a className='HP-Username'><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</a></button>
                             <button type="button" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
                             <span className="visually-hidden">User Dropdown</span>
                             </button>

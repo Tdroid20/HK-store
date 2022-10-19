@@ -11,9 +11,15 @@ const LandingPage = () => {
     JoinedAt = `${JoinedAt.toLocaleDateString('pt-BR')} as ${JoinedAt.getHours()}:${JoinedAt.getMinutes()}`
     const [profile, showProfile] = useState(false);
 
+    document.onkeydown = function(e) {
+        if(e.key === 'Escape') {
+            showProfile(false)
+        }
+      }
+
     return (
         <>
-            { profile && (<ProfileView profile={profile} showProfile={showProfile} />) }
+            { profile && <ProfileView profile={profile} showProfile={showProfile} /> }
             <div className="HeaderStyle">
                 <HeaderView profile={profile} showProfile={showProfile} />
             </div>
