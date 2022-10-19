@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import verify from '../../assets/verify.svg';
+import './badges.css';
 
 export const PrimaryBadge = (props) => {
     return (
@@ -60,6 +63,15 @@ export const WarningBadge = (props) => {
     return (
         <>
             <span className="badge rounded-pill text-bg-warning">{props.flagName}</span>
+        </>
+    )
+}
+
+export const VerifyBadge = (props) => {
+    
+    return (
+        <>
+           <i className="bi bi-patch-check-fill"></i>
         </>
     )
 }

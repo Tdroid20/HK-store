@@ -1,18 +1,21 @@
-import React from "react"; 
+import React, { useState } from "react"; 
 import HeaderView from "../../components/header/header";
 import './landing.css';
 import kaiAvatar from '../../assets/Kai.png';
 import Tdroid from '../../assets/tdroid.gif';
 import zHenrique from '../../assets/zZHenrique-_.png';
+import { ProfileView } from "../../components/profile/profileModal";
 
 const LandingPage = () => {
     var JoinedAt = new Date()
     JoinedAt = `${JoinedAt.toLocaleDateString('pt-BR')} as ${JoinedAt.getHours()}:${JoinedAt.getMinutes()}`
+    const [profile, showProfile] = useState(false);
 
     return (
         <>
+            { profile && (<ProfileView profile={profile} showProfile={showProfile} />) }
             <div className="HeaderStyle">
-                <HeaderView />
+                <HeaderView profile={profile} showProfile={showProfile} />
             </div>
             <div className="LandingMain">
                 <div className="Welcome">

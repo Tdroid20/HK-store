@@ -5,12 +5,14 @@ import React, { useEffect, useState } from "react";
 import brange from '../../assets/BrangeHK.png';
 import logoName from '../../assets/Hk.png';
 import { getUserDetails } from '../../api/index';
-import { DangerBadge, DarkBadge, LightBadge, PrimaryBadge, SecondaryBadge, SuccessBadge, WarningBadge } from '../badges/badges.status'
+import { DangerBadge, DarkBadge, LightBadge, PrimaryBadge, SecondaryBadge, SuccessBadge, WarningBadge } from '../badges/badges.status';
+import { ProfileView } from '../profile/profileModal';
 
-const HeaderView = () => {
-    const [ user, setUser ] = React.useState(null);
+const HeaderView = (props) => {
     const [ loading, setLoading ] = React.useState(true);
     const [ isBeta, setBetaView ] = useState(false);
+    const [ user, setUser ] = React.useState(null);
+    const { profile, showProfile } = props;
 
     useEffect( () => {
         getUserDetails().then(({data}) => {
@@ -47,10 +49,10 @@ const HeaderView = () => {
                         </a>
                         </div>
                     )}
-                    
                     { user != null && (<>
+
                         <div className="btn-group">
-                                <button type="button" className="btn btn-secondary HP-UserColor"><a className='HP-Username' href={'/profile?id=' + user.discordID}><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</a></button>
+                                <button type="button" className="btn btn-secondary HP-UserColor"><a className='HP-Username' onClick={() => showProfile(true)}><img src={user.discordAvatar} alt="" className='HP-Avatar' />{user.discordUsername}</a></button>
                             <button type="button" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
                             <span className="visually-hidden">User Dropdown</span>
                             </button>
