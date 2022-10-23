@@ -17,13 +17,21 @@ const LandingPage = () => {
         }
       }
 
+
+      let scrollControl = profile ? "hidden" : "";
+
+      document.getElementById('body')
+                                .className = scrollControl
+      
+      
+      
     return (
         <>
             { profile && <ProfileView profile={profile} showProfile={showProfile} /> }
             <div className="HeaderStyle">
                 <HeaderView profile={profile} showProfile={showProfile} />
             </div>
-            <div className="LandingMain">
+            <div className={"LandingMain"}>
                 <div className="Welcome">
                     <h1 className="LandingTitle">Seja bem-vindos</h1>
                 </div>

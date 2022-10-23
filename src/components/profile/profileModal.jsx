@@ -5,7 +5,7 @@ import { getUserDetails } from "../../api";
 import './profile.css';
 import { MdVerified } from 'react-icons/md';
 import banner from '../../assets/BannerNull.png';
-import spotify from '../../assets/spotifyro.png'
+import { CardConnection } from "../CardConnection/connection";
 
 export const ProfileView = () => {
     const [ user, setUser ] = React.useState(null);
@@ -14,20 +14,20 @@ export const ProfileView = () => {
 
     useEffect( () => {
         getUserDetails().then(({data}) => {
-            console.log(data);
             setUser(data);
             setLoading(false);
         })
     }, [])
 
+
     return (
 
         /*  */
         <>
-        <head>
+        {/* <head>
             <script src="https://kit.fontawesome.com/62b8a87af8.js" crossOrigin="anonymous"></script>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-        </head>
+        </head> */}
           { !loading && (
             <div className="profileMain">
                 <div className="cardProfile">
@@ -55,11 +55,14 @@ export const ProfileView = () => {
                                 <textarea name="aboutMe" id="aboutMe" cols="35" rows="3" placeholder={user.aboutMe} className="aboutMe" maxLength="100"></textarea>
                         </div>
                         <div className="cardSeparator topSep"></div>
+                            <div className="cardGroup">
+                                { user.discordUsername && user.discordConnections.filter((x) => x.visibility === 1).map(y => {
 
-                        <div className="cardConnection">
-                            <img src={spotify} className="icon" />
-                            <p className="connectionName">{user.discordUsername}</p>
-                        </div>
+                                    return (
+                                        <CardConnection connection={y} key={y.id} />
+                                    )
+                                }) }
+                            </div>
                     </div>
                 </div>
             </div>

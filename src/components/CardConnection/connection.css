@@ -1,0 +1,40 @@
+.cardGroup {
+    width: 100%;
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: scroll;
+    height: 140px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardConnection {
+    display: flex;
+    margin-top: 10px;
+    width: 160px;
+    height: 36px;
+    background: #202225;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.connectionName {
+    width: 100px;
+    height: 13px;
+    font-family: 'ABC Ginto Normal Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.icon {
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+}

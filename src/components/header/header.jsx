@@ -17,7 +17,6 @@ const HeaderView = (props) => {
     useEffect(() => {
         getUserDetails().then(({data}) => {
             setUser(data);
-            console.log(data);
             setLoading(false);
         })
     }, [])
