@@ -20,11 +20,9 @@ import xbox from '../../assets/Icons/xbox.png';
 import reddit from '../../assets/Icons/reddit.png'
 
 export const CardConnection = (props) => {
-    console.log('a');
+
     const { connection } = props;
     let img;
-
-    console.log(connection);
 
     switch(connection.type) {
         case 'spotify':

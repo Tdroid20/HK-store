@@ -6,6 +6,9 @@ import './profile.css';
 import { MdVerified } from 'react-icons/md';
 import banner from '../../assets/BannerNull.png';
 import { CardConnection } from "../CardConnection/connection";
+import member from '../../assets/Badges/Member.png'
+import premium from '../../assets//Badges/HighPremium_Logo.png'
+import booster from '../../assets/Badges/BoosterRocket.png'
 
 export const ProfileView = () => {
     const [ user, setUser ] = React.useState(null);
@@ -19,6 +22,7 @@ export const ProfileView = () => {
         })
     }, [])
 
+    let idKey = 0;
 
     return (
 
@@ -38,9 +42,18 @@ export const ProfileView = () => {
                         <div className="cardBackground">
                             <img src={user.discordAvatar} className="cardAvatarIcon" />
                         </div>
-                    <div className="cardAvatar">
-                    </div>
+                    
 
+                    <div className="Badge">
+                        <div className="BadgeWidthController">
+                            <div className="badgePlace"> 
+                                {/* <img src={member} alt="Badge" className="BadgeIcon memberBadge" />
+                                <img src={premium} alt="Badge" className="BadgeIcon" />
+                                <img src={booster} alt="Badge" className="BadgeIcon boosterBadge" /> */}
+                                
+                            </div>
+                        </div>
+                    </div>
                     <div className="container">
                         <div className="cardContainer">
                             <p className="cardUsername">{user.discordUsername}</p>
@@ -57,9 +70,10 @@ export const ProfileView = () => {
                         <div className="cardSeparator topSep"></div>
                             <div className="cardGroup">
                                 { user.discordUsername && user.discordConnections.filter((x) => x.visibility === 1).map(y => {
+                                    
 
                                     return (
-                                        <CardConnection connection={y} key={y.id} />
+                                        <CardConnection connection={y} key={idKey++} />
                                     )
                                 }) }
                             </div>
