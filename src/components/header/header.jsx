@@ -37,6 +37,8 @@ const HeaderView = (props) => {
                 <div className='NavItems'>
                     <p className='NavLink'><a href="/home" className='NavTitleLink'>Home</a></p>
                     <p className='NavLink'><a href="/store" className='NavTitleLink'>Store</a></p>
+                    <p className='NavLink'><a href="/store" className='NavTitleLink'>Premium</a></p>
+                    <p className='NavLink'><a href="/staff" className='NavTitleLink'>Staff</a></p>
                     <p className='NavLink'><a href="https://discord.gg/ndF2gERSDn" className='NavTitleLink'>Comunity</a></p>
 
                     
