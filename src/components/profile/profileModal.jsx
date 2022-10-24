@@ -65,7 +65,7 @@ export const ProfileView = () => {
                             <div className="cardAboutMe">
                                 About-me
                             </div>
-                                <textarea name="aboutMe" id="aboutMe" cols="35" rows="3" placeholder={user.aboutMe} className="aboutMe" maxLength="100"></textarea>
+                                <textarea name="aboutMe" id="aboutMe" cols="35" rows="3" placeholder={user.about} className="aboutMe" maxLength="100"></textarea>
                         </div>
                         <div className="cardSeparator topSep"></div>
                             <div className="cardGroup">
