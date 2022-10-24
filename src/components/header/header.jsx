@@ -62,7 +62,7 @@ const HeaderView = (props) => {
                             <li><a className="dropdown-item" href="#">Another action</a></li>
                             <li><a className="dropdown-item" href="#">Something else here</a></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item HP-LogoutColor" href="#"><i className="fa-solid fa-right-from-bracket"></i> Logout {<DangerBadge flagName="Dev" />}</a></li>
+                            <li><a className="dropdown-item HP-LogoutColor" href={process.env.REACT_APP_API + "/auth/logout"}><i className="fa-solid fa-right-from-bracket"></i> Logout {<DangerBadge flagName="Dev" />}</a></li>
                             </ul>
                         </div>
                         </>)}

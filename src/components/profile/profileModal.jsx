@@ -6,9 +6,10 @@ import './profile.css';
 import { MdVerified } from 'react-icons/md';
 import banner from '../../assets/BannerNull.png';
 import { CardConnection } from "../CardConnection/connection";
-import member from '../../assets/Badges/Member.png'
-import premium from '../../assets//Badges/HighPremium_Logo.png'
-import booster from '../../assets/Badges/BoosterRocket.png'
+import member from '../../assets/Badges/Member.png';
+import premium from '../../assets//Badges/HighPremium_Logo.png';
+import booster from '../../assets/Badges/BoosterRocket.png';
+import { UserBadges } from "../badges/badges.status";
 
 export const ProfileView = () => {
     const [ user, setUser ] = React.useState(null);
@@ -47,9 +48,12 @@ export const ProfileView = () => {
                     <div className="Badge">
                         <div className="BadgeWidthController">
                             <div className="badgePlace"> 
-                                {/* <img src={member} alt="Badge" className="BadgeIcon memberBadge" />
-                                <img src={premium} alt="Badge" className="BadgeIcon" />
-                                <img src={booster} alt="Badge" className="BadgeIcon boosterBadge" /> */}
+
+                                { user.badges && user.badges.filter((index, item) => user.badges.indexOf(index) === item).map(x => {
+                                    return (
+                                        <UserBadges name={x} key={x} /> 
+                                    )
+                                })}
                                 
                             </div>
                         </div>

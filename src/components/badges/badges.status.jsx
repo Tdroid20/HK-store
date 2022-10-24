@@ -3,6 +3,10 @@ import React from "react";
 import verify from '../../assets/verify.svg';
 import './badges.css';
 
+import member from '../../assets/Badges/Member.png';
+import booster from '../../assets/Badges/BoosterRocket.png';
+import premium from '../../assets//Badges/HighPremium_Logo.png';
+
 export const PrimaryBadge = (props) => {
     return (
         <>
@@ -73,5 +77,31 @@ export const VerifyBadge = (props) => {
         <>
            <i className="bi bi-patch-check-fill"></i>
         </>
+    )
+}
+
+export const UserBadges = (props) => {
+    const { name } = props;
+
+    let img;
+
+    switch(name) {
+        case 'member':
+            img = member;
+            break;
+        case 'booster':
+            img = booster;
+            break;
+        case 'highPremium':
+            img = premium;
+            break;
+        default:
+            break;
+    }
+
+    return (
+        <div key={name}>
+            <img src={img} alt="Badge" className={"BadgeIcon " + name + "Badge"} key={name} />
+        </div>
     )
 }
