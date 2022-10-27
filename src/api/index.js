@@ -2,7 +2,7 @@ import axios from 'axios';
 import Cookie from 'js-cookie'
 
 export function getUserDetails() {
-    console.log(document.cookie);
+    console.log(document.cookie.includes('Authentication'));
     return axios.get(`${process.env.REACT_APP_API}/auth`, {
         withCredentials: true,
         headers: {
