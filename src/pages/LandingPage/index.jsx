@@ -4,7 +4,6 @@ import './landing.css';
 import kaiAvatar from '../../assets/Kai.png';
 import Tdroid from '../../assets/tdroid.gif';
 import zHenrique from '../../assets/zZHenrique-_.png';
-import { ProfileView } from "../../components/profile/profileModal";
 
 const LandingPage = () => {
     var JoinedAt = new Date()
@@ -16,18 +15,11 @@ const LandingPage = () => {
             showProfile(false)
         }
       }
-
-
-      let scrollControl = profile ? "hidden" : "";
-
-      document.getElementById('body')
-                                .className = scrollControl
       
       
       
     return (
         <>
-            { profile && <ProfileView profile={profile} showProfile={showProfile} /> }
             <div className="HeaderStyle">
                 <HeaderView profile={profile} showProfile={showProfile} />
             </div>
