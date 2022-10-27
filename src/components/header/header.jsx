@@ -57,7 +57,7 @@ const HeaderView = (props) => {
                             <span className="visually-hidden">User Dropdown</span>
                             </button>
                             <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Leaderboard</a></li>
+                            <li><a className="dropdown-item" href="/leaderboard">Leaderboard</a></li>
                             <li><a className="dropdown-item" href="#">Another action</a></li>
                             <li><a className="dropdown-item" href="#">Something else here</a></li>
                             <li><hr className="dropdown-divider" /></li>
