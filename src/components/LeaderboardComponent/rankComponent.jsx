@@ -32,7 +32,7 @@ export const RankComponent = () => {
 
                         {expInfo.map(x => {
                             let user = x.user;
-                            let exp = x.expInfo
+                            let exp = x.expInfo;
                             
                             return (
                                 <div className="MF-MemberBox" key={user.idU}>

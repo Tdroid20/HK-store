@@ -217,6 +217,10 @@
     resize: none;
 }
 
+.aboutMe:focus {
+    outline: none;
+}
+
 .topSep  {
     margin-top: 10px;
 }
