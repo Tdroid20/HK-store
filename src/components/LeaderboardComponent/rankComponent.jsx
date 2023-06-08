@@ -17,29 +17,6 @@ export const RankComponent = () => {
     });
   }, []);
 
-  // getImageAvatar(
-  //   "https://cdn.discordapp.com/avatars/389910735549104148/154f4954b460c212514c03c659341868"
-  // )
-  //   .then(() => console.log("imagem carregada com sucesso"))
-  //   .catch(() => console.log("erro ao carregar imagem"));
-  // let counter = 0;
-  // console.log(
-  //   expInfo.map((item) => {
-  //     getImageAvatar(item.user.discordAvatar)
-  //       .then((res) => console.log())
-  //       .catch(() => console.log("erro ao carregar imagem"));
-  //   })
-  // );
-  // let img;
-
-  // console.log(
-  //   getImageAvatar(
-  //     "https://cdn.discordapp.com/avatars/389910735549104148/154f4954b460c212514c03c659341868"
-  //   )
-  //     .then(() => console.log("funcionou"))
-  //     .catch((err) => console.log(err.response.status))
-  // );
-
   return (
     <div>
       {!loading && (

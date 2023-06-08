@@ -5,6 +5,10 @@ import kaiAvatar from "../../assets/Kai.png";
 import Tdroid from "../../assets/tdroid.gif";
 import zHenrique from "../../assets/zZHenrique-_.png";
 
+import DefaultBadge from "../../assets/Badges/Member.png"
+import premiumBadge from "../../assets/Badges/HighPremium_Logo.png"
+import boosterBadge from "../../assets/Badges/BoosterRocket.png"
+
 const LandingPage = () => {
   var JoinedAt = new Date();
   JoinedAt = `${JoinedAt.toLocaleDateString(
@@ -61,7 +65,7 @@ const LandingPage = () => {
               </div>
               <div className="MF-MemberType">
                 <img
-                  src="https://cdn.discordapp.com/attachments/1025949696851705856/1026158288083112007/HighPremium_Logo.png"
+                  src={premiumBadge}
                   alt="Premium Type"
                   className="MF-MemberTypeIcon"
                 />
@@ -83,7 +87,7 @@ const LandingPage = () => {
               </div>
               <div className="MF-MemberType">
                 <img
-                  src="https://cdn.discordapp.com/attachments/1017576990217359400/1017577510902452304/BoosterRocket.png"
+                  src={boosterBadge}
                   alt="Premium Type"
                   className="MF-MemberTypeIcon"
                 />
@@ -92,7 +96,7 @@ const LandingPage = () => {
 
             <div className="MF-MemberBox">
               <img
-                src="https://cdn.discordapp.com/attachments/1025989693965340694/1028219701958029342/Wumpus_-_20.png"
+                src={zHenrique}
                 alt="User Avatar"
                 className="MF-Avatar"
               />
@@ -108,7 +112,7 @@ const LandingPage = () => {
               </div>
               <div className="MF-MemberType">
                 <img
-                  src="https://cdn.discordapp.com/icons/886117125444468746/61c06d57d34a4660cb293d1eaa18e496.png"
+                  src={DefaultBadge}
                   alt="Premium Type"
                   className="MF-MemberTypeIcon"
                 />
@@ -129,7 +133,7 @@ const LandingPage = () => {
               </div>
               <div className="MF-MemberType">
                 <img
-                  src="https://cdn.discordapp.com/icons/886117125444468746/61c06d57d34a4660cb293d1eaa18e496.png"
+                  src={premiumBadge}
                   alt="Premium Type"
                   className="MF-MemberTypeIcon"
                 />

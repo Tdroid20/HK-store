@@ -109,7 +109,7 @@ export const UserBadges = (props) => {
 
 export const TableUserBadge = (props) => {
     const { name } = props;
-    let img = 'https://cdn.discordapp.com/icons/886117125444468746/61c06d57d34a4660cb293d1eaa18e496.png';
+    let img = member;
 
     switch(name) {
         case 'highBooster':
