@@ -108,8 +108,8 @@ const HeaderView = () => {
             </a>
           </p>
           <p className="NavLink">
-            <a href="https://discord.gg/ndF2gERSDn" className="NavTitleLink">
-              Comunity
+            <a href="/community" className="NavTitleLink">
+              Community
             </a>
           </p>
 

@@ -2,7 +2,6 @@
 import React from "react";
 import verify from '../../assets/verify.svg';
 import './badges.css';
-import { faCheckCircle } from '@fortawesome/free-regular-svg-icons'
 
 import member from '../../assets/Badges/Member.png';
 import booster from '../../assets/Badges/BoosterRocket.png';
